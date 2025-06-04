@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import MatrixBackground from '../components/MatrixBackground';
 import Header from '../components/Header';
+import WelcomeSection from '../components/WelcomeSection';
 import AboutSection from '../components/AboutSection';
 import ExperienceSection from '../components/ExperienceSection';
 import SkillsSection from '../components/SkillsSection';
@@ -34,6 +35,7 @@ const Index = () => {
       <MatrixBackground />
       <div className="relative z-10">
         <Header />
+        <WelcomeSection />
         <section id="about">
           <AboutSection />
         </section>
