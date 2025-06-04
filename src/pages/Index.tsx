@@ -2,10 +2,12 @@
 import React from 'react';
 import MatrixBackground from '../components/MatrixBackground';
 import Header from '../components/Header';
+import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkillsSection';
-import ExperienceSection from '../components/ExperienceSection';
 import ProjectsSection from '../components/ProjectsSection';
+import ContactSection from '../components/ContactSection';
 import EducationSection from '../components/EducationSection';
+import ExperienceSection from '../components/ExperienceSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -14,10 +16,12 @@ const Index = () => {
       <MatrixBackground />
       <div className="relative z-10">
         <Header />
+        <AboutSection />
         <SkillsSection />
-        <ExperienceSection />
         <ProjectsSection />
+        <ContactSection />
         <EducationSection />
+        <ExperienceSection />
         <Footer />
       </div>
     </div>
