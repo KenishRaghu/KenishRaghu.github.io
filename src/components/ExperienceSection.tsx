@@ -37,18 +37,18 @@ const ExperienceSection = () => {
   return (
     <section className="py-20 relative z-10">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16 text-blue-400 font-mono">
-          MISSION HISTORY
+        <h2 className="text-4xl font-bold text-center mb-16 text-green-400 font-mono">
+          WORK EXPERIENCE
         </h2>
         <div className="space-y-12">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-gray-900/50 backdrop-blur-sm border border-blue-400/20 rounded-lg p-8 hover:border-blue-400/50 transition-all duration-300">
+            <div key={index} className="bg-gray-900/50 backdrop-blur-sm border border-green-400/20 rounded-lg p-8 hover:border-green-400/50 transition-all duration-300">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
                 <div className="flex items-start mb-4 md:mb-0">
-                  <exp.icon className="w-10 h-10 text-blue-400 mr-4 mt-1" />
+                  <exp.icon className="w-10 h-10 text-green-400 mr-4 mt-1" />
                   <div>
                     <h3 className="text-2xl font-bold text-white mb-2">{exp.role}</h3>
-                    <h4 className="text-xl text-blue-400 font-semibold mb-2">{exp.company}</h4>
+                    <h4 className="text-xl text-green-400 font-semibold mb-2">{exp.company}</h4>
                     <div className="flex flex-col sm:flex-row sm:items-center text-gray-400 space-y-1 sm:space-y-0 sm:space-x-4">
                       <div className="flex items-center">
                         <MapPin className="w-4 h-4 mr-1" />

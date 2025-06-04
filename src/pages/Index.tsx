@@ -3,11 +3,11 @@ import React from 'react';
 import MatrixBackground from '../components/MatrixBackground';
 import Header from '../components/Header';
 import AboutSection from '../components/AboutSection';
+import ExperienceSection from '../components/ExperienceSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
-import ContactSection from '../components/ContactSection';
 import EducationSection from '../components/EducationSection';
-import ExperienceSection from '../components/ExperienceSection';
+import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -17,11 +17,11 @@ const Index = () => {
       <div className="relative z-10">
         <Header />
         <AboutSection />
+        <ExperienceSection />
         <SkillsSection />
         <ProjectsSection />
-        <ContactSection />
         <EducationSection />
-        <ExperienceSection />
+        <ContactSection />
         <Footer />
       </div>
     </div>

@@ -31,16 +31,16 @@ const ContactSection = () => {
   return (
     <section className="py-20 relative z-10">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16 text-orange-400 font-mono">
+        <h2 className="text-4xl font-bold text-center mb-16 text-green-400 font-mono">
           GET IN TOUCH
         </h2>
         
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="bg-gray-900/50 backdrop-blur-sm border border-orange-400/20 rounded-lg p-8">
+            <div className="bg-gray-900/50 backdrop-blur-sm border border-green-400/20 rounded-lg p-8">
               <div className="flex items-center mb-6">
-                <Shield className="w-8 h-8 text-orange-400 mr-3" />
+                <Shield className="w-8 h-8 text-green-400 mr-3" />
                 <h3 className="text-2xl font-bold text-white font-mono">Let's Secure the Future</h3>
               </div>
               
@@ -51,47 +51,38 @@ const ContactSection = () => {
               
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Mail className="w-5 h-5 text-orange-400 mr-4" />
+                  <Mail className="w-5 h-5 text-green-400 mr-4" />
                   <div>
                     <p className="text-white font-semibold">Email</p>
-                    <a href="mailto:raghu.ke@northeastern.edu" className="text-gray-400 hover:text-orange-400 transition-colors">
+                    <a href="mailto:raghu.ke@northeastern.edu" className="text-gray-400 hover:text-green-400 transition-colors">
                       raghu.ke@northeastern.edu
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-orange-400 mr-4" />
+                  <Phone className="w-5 h-5 text-green-400 mr-4" />
                   <div>
                     <p className="text-white font-semibold">Phone</p>
-                    <a href="tel:8573528912" className="text-gray-400 hover:text-orange-400 transition-colors">
+                    <a href="tel:8573528912" className="text-gray-400 hover:text-green-400 transition-colors">
                       (857) 352-8912
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
-                  <MapPin className="w-5 h-5 text-orange-400 mr-4" />
+                  <MapPin className="w-5 h-5 text-green-400 mr-4" />
                   <div>
                     <p className="text-white font-semibold">Location</p>
                     <p className="text-gray-400">Boston, Massachusetts</p>
                   </div>
                 </div>
               </div>
-              
-              <div className="mt-8 p-4 bg-orange-400/10 border border-orange-400/20 rounded-lg">
-                <p className="text-orange-400 font-semibold text-sm">
-                  🔒 Security Clearance: Available for discussion
-                </p>
-                <p className="text-gray-400 text-sm mt-1">
-                  Open to roles requiring security clearances and government contracts
-                </p>
-              </div>
             </div>
           </div>
           
           {/* Contact Form */}
-          <div className="bg-gray-900/50 backdrop-blur-sm border border-orange-400/20 rounded-lg p-8">
+          <div className="bg-gray-900/50 backdrop-blur-sm border border-green-400/20 rounded-lg p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-white font-semibold mb-2">
@@ -104,7 +95,7 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-orange-400 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-400 transition-colors"
                   placeholder="Your full name"
                 />
               </div>
@@ -120,7 +111,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-orange-400 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-400 transition-colors"
                   placeholder="your.email@company.com"
                 />
               </div>
@@ -135,7 +126,7 @@ const ContactSection = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-orange-400 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-400 transition-colors"
                   placeholder="Security Role Opportunity / Project Collaboration"
                 />
               </div>
@@ -151,14 +142,14 @@ const ContactSection = () => {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-orange-400 transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-green-400 transition-colors resize-none"
                   placeholder="Tell me about the security role, project requirements, or how we can collaborate..."
                 />
               </div>
               
               <button
                 type="submit"
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-colors flex items-center justify-center"
+                className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-colors flex items-center justify-center"
               >
                 <Send className="w-5 h-5 mr-2" />
                 Send Secure Message
