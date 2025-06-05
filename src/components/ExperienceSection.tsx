@@ -53,8 +53,7 @@ const ExperienceSection = () => {
             <h2 className="text-4xl font-bold text-green-400 font-mono relative z-10">
               WORK EXPERIENCE
             </h2>
-            <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-green-500/10 to-cyan-500/10 rounded-lg blur-xl opacity-60"></div>
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-green-400 to-cyan-400 rounded-full"></div>
+            
           </div>
         </div>
         

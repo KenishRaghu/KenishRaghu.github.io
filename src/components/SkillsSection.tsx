@@ -80,8 +80,9 @@ const SkillsSection = () => {
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-16 text-red-400 font-mono relative overflow-hidden">
           <span className="relative z-10">SKILLS & EXPERTISE</span>
-          <span className="absolute top-1/2 left-0 w-full h-0.5 bg-red-400/30"></span>
-          <span className="absolute top-1/2 left-0 w-1/2 h-0.5 bg-red-400 animate-pulse"></span>
+          {/* <span className="absolute top-1/2 left-0 w-full h-0.5 bg-red-400/30"></span>
+          <span className="absolute top-1/2 left-0 w-1/2 h-0.5 bg-red-400 animate-pulse"></span> */}
+          
         </h2>
         
         {/* Category Tabs */}

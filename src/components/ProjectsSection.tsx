@@ -76,20 +76,10 @@ const ProjectsSection = () => {
   const ProjectCard = ({ project, category }: { project: any, category: string }) => (
     <div className="bg-gray-900/50 backdrop-blur-sm border border-green-400/20 rounded-lg p-6 hover:border-green-400/50 transition-all duration-300 hover:transform hover:scale-105">
       <div className="flex items-start justify-between mb-4">
-        <div className="flex items-start">
-          <project.icon className="w-8 h-8 text-green-400 mr-3 mt-1" />
-          <div className="flex-1">
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="text-xl font-bold text-white">{project.title}</h3>
-              <a 
-                href={`https://github.com/KenishRaghu/${project.repo}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-green-400 transition-colors"
-              >
-                <Github className="w-5 h-5" />
-              </a>
-            </div>
+        <div className="flex items-start flex-1">
+          <project.icon className="w-8 h-8 text-green-400 mr-3 mt-1 flex-shrink-0" />
+          <div className="flex-1 min-w-0">
+            <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
             <div className="flex items-center space-x-2 mb-2">
               <span className="inline-block px-2 py-1 bg-green-400/20 text-green-400 rounded text-xs font-semibold">
                 {project.type}
@@ -98,6 +88,14 @@ const ProjectsSection = () => {
             <p className="text-green-400 font-semibold mb-3">{project.tech}</p>
           </div>
         </div>
+        <a 
+          href={`https://github.com/KenishRaghu/${project.repo}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-400 hover:text-green-400 transition-colors flex-shrink-0 ml-4"
+        >
+          <Github className="w-5 h-5" />
+        </a>
       </div>
       <p className="text-gray-300 text-sm leading-relaxed">{project.description}</p>
     </div>

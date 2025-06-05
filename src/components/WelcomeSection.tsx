@@ -49,7 +49,7 @@ const WelcomeSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative z-10 px-6">
+    <section className="min-h-screen flex items-center justify-center relative z-10 px-10 pt-16">
       <div className="text-center max-w-4xl mx-auto">
         {/* Main Welcome Content */}
         <div className="mb-12">
@@ -58,9 +58,9 @@ const WelcomeSection = () => {
             <Shield className="relative w-24 h-24 text-green-400 mx-auto animate-float" />
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 font-mono">
-            <span className="text-green-400">CYBER</span>
-            <span className="text-white">SEC</span>
+           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 font-mono">
+            <span className="text-green-400">ACCESS</span>
+            <span className="text-white">GRANTED</span>
           </h1>
           
           <div className="h-16 flex items-center justify-center mb-8">
@@ -71,10 +71,10 @@ const WelcomeSection = () => {
             </div>
           </div>
           
-          <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-2xl mx-auto">
-            Welcome to my digital fortress. I'm <span className="text-green-400 font-semibold">Kenish Raghu</span>, 
-            a Security Architect dedicated to building impenetrable defenses in the ever-evolving cyber landscape.
-          </p>
+         <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-2xl mx-auto">
+  Welcome to my digital fortress. I'm Kenish Raghu, 
+  a <span className="text-green-400 font-semibold">Security Architect</span> and <span className="text-cyan-400 font-semibold">Full-Stack Developer</span> dedicated to building impenetrable defenses and robust software solutions in the ever-evolving cyber landscape.
+</p>
         </div>
 
         {/* Interactive Security Stats */}

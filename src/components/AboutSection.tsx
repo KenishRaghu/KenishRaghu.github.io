@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Shield, Lock, Eye, Zap, ExternalLink, Terminal, Download } from 'lucide-react';
 
@@ -96,7 +95,7 @@ const AboutSection = () => {
                     Currently pursuing my Master's in Computer Science at Northeastern University to deepen my expertise 
                     in emerging security technologies.
                   </p>
-                  <p className="text-gray-300 leading-relaxed relative pl-4 border-l-2 border-green-400/30">
+                  <p className="text-gray-300 leading-relaxed text-lg relative pl-4 border-l-2 border-green-400/50">
                     My passion lies in building robust security frameworks that protect digital assets while enabling 
                     seamless user experiences. I thrive on analyzing complex attack patterns, implementing zero-day 
                     vulnerability mitigations, and developing innovative security solutions.
@@ -139,13 +138,19 @@ const AboutSection = () => {
                 </div>
                 
                 <div className="mt-8 flex flex-wrap gap-4">
-                  <div className="relative group inline-block">
-                    <div className="absolute -inset-0.5 bg-gradient-to-r from-green-400 to-green-600 rounded-full opacity-60 blur transition duration-300 group-hover:opacity-100 group-hover:duration-200"></div>
-                    <button className="relative flex items-center space-x-2 bg-gray-900 text-green-400 px-6 py-3 rounded-full text-sm font-semibold border border-green-400/30">
-                      <Download className="w-4 h-4" />
-                      <span>Download Resume</span>
-                    </button>
-                  </div>
+  <div className="relative group inline-block">
+    <div className="absolute -inset-0.5 bg-gradient-to-r from-green-400 to-green-600 rounded-full opacity-60 blur transition duration-300 group-hover:opacity-100 group-hover:duration-200"></div>
+    <a 
+      href="https://drive.google.com/file/d/1Tkora_IU8gBpmxTkeHq3cfd2t4ZdcRQ5/view?usp=sharing" 
+      download="Kenish_Raghu_Resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative flex items-center space-x-2 bg-gray-900 text-green-400 px-6 py-3 rounded-full text-sm font-semibold border border-green-400/30 hover:bg-gray-800 transition-colors"
+    >
+      <Download className="w-4 h-4" />
+      <span>Download Resume</span>
+    </a>
+  </div>
                   
                   <div className="inline-flex items-center space-x-2 bg-green-400/20 text-green-400 px-4 py-2 rounded-full text-sm font-semibold">
                     <Shield className="w-4 h-4" />

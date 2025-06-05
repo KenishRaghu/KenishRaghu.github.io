@@ -28,8 +28,7 @@ const EducationSection = () => {
             <h2 className="text-4xl font-bold text-yellow-400 font-mono relative z-10">
               ACADEMIC CREDENTIALS
             </h2>
-            <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-lg blur-xl opacity-60"></div>
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full"></div>
+            
           </div>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
