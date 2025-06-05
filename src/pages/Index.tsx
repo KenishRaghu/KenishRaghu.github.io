@@ -4,10 +4,10 @@ import MatrixBackground from '../components/MatrixBackground';
 import Header from '../components/Header';
 import WelcomeSection from '../components/WelcomeSection';
 import AboutSection from '../components/AboutSection';
+import EducationSection from '../components/EducationSection';
 import ExperienceSection from '../components/ExperienceSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
-import EducationSection from '../components/EducationSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
 
@@ -39,6 +39,9 @@ const Index = () => {
         <section id="about">
           <AboutSection />
         </section>
+        <section id="education">
+          <EducationSection />
+        </section>
         <section id="experience">
           <ExperienceSection />
         </section>
@@ -47,9 +50,6 @@ const Index = () => {
         </section>
         <section id="projects">
           <ProjectsSection />
-        </section>
-        <section id="education">
-          <EducationSection />
         </section>
         <section id="contact">
           <ContactSection />

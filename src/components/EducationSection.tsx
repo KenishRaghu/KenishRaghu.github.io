@@ -23,9 +23,15 @@ const EducationSection = () => {
   return (
     <section className="py-20 relative z-10">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16 text-yellow-400 font-mono">
-          ACADEMIC CREDENTIALS
-        </h2>
+        <div className="text-center mb-16">
+          <div className="relative inline-block">
+            <h2 className="text-4xl font-bold text-yellow-400 font-mono relative z-10">
+              ACADEMIC CREDENTIALS
+            </h2>
+            <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 rounded-lg blur-xl opacity-60"></div>
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full"></div>
+          </div>
+        </div>
         <div className="grid md:grid-cols-2 gap-8">
           {education.map((edu, index) => (
             <div key={index} className="bg-gray-900/50 backdrop-blur-sm border border-yellow-400/20 rounded-lg p-6 hover:border-yellow-400/50 transition-all duration-300">

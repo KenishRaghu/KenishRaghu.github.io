@@ -48,11 +48,15 @@ const ExperienceSection = () => {
   return (
     <section className="py-20 relative z-10">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16 text-green-400 font-mono relative overflow-hidden">
-          <span className="relative z-10">WORK EXPERIENCE</span>
-          <span className="absolute top-1/2 left-0 w-full h-0.5 bg-green-400/30"></span>
-          <span className="absolute top-1/2 left-0 w-1/2 h-0.5 bg-green-400 animate-pulse"></span>
-        </h2>
+        <div className="text-center mb-16">
+          <div className="relative inline-block">
+            <h2 className="text-4xl font-bold text-green-400 font-mono relative z-10">
+              WORK EXPERIENCE
+            </h2>
+            <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-green-500/10 to-cyan-500/10 rounded-lg blur-xl opacity-60"></div>
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-green-400 to-cyan-400 rounded-full"></div>
+          </div>
+        </div>
         
         <div className="space-y-8">
           {experiences.map((exp, index) => (

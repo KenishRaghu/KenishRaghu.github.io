@@ -42,21 +42,21 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-black/80 backdrop-blur-md shadow-lg shadow-green-900/20 py-3' 
-          : 'bg-transparent py-5'
+          ? 'bg-black/90 backdrop-blur-md shadow-lg shadow-green-900/20 py-2' 
+          : 'bg-transparent py-4'
       }`}
     >
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center z-50">
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-green-600 to-cyan-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
-              <div className="relative flex items-center bg-black rounded-full p-1.5">
-                <Shield className="h-8 w-8 text-green-400" />
+              <div className="relative flex items-center bg-black/80 rounded-full p-2">
+                <Shield className="h-6 w-6 text-green-400" />
               </div>
             </div>
-            <span className="ml-3 text-xl font-bold text-white">
+            <span className="ml-3 text-lg font-bold text-white">
               <span className="text-green-400">K</span>enish <span className="text-green-400">R</span>aghu
             </span>
           </div>
@@ -65,16 +65,16 @@ const Header = () => {
           <nav className={`hidden md:flex items-center space-x-1`}>
             {[
               { id: 'about', label: 'About' },
+              { id: 'education', label: 'Education' },
               { id: 'experience', label: 'Experience' },
               { id: 'skills', label: 'Skills' },
               { id: 'projects', label: 'Projects' },
-              { id: 'education', label: 'Education' },
               { id: 'contact', label: 'Contact' },
             ].map((item, index) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`relative px-4 py-2 text-gray-300 hover:text-green-400 transition-all ${
+                className={`relative px-4 py-2 text-gray-300 hover:text-green-400 transition-all duration-300 ${
                   animateMenu ? 'opacity-100' : 'opacity-0'
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
@@ -96,7 +96,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button 
-            className="md:hidden text-white p-2" 
+            className="md:hidden text-white p-2 z-50" 
             onClick={handleMenuToggle}
             aria-label="Toggle menu"
           >
@@ -117,10 +117,10 @@ const Header = () => {
           <nav className="flex flex-col space-y-3 mt-4 pb-5 border-t border-green-400/20 pt-4">
             {[
               { id: 'about', label: 'About Me' },
+              { id: 'education', label: 'Education' },
               { id: 'experience', label: 'Experience' },
               { id: 'skills', label: 'Skills' },
               { id: 'projects', label: 'Projects' },
-              { id: 'education', label: 'Education' },
               { id: 'contact', label: 'Contact' },
             ].map((item) => (
               <button
