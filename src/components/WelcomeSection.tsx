@@ -58,22 +58,21 @@ const WelcomeSection = () => {
             <Shield className="relative w-24 h-24 text-green-400 mx-auto animate-float" />
           </div>
           
-           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 font-mono">
-            <span className="text-green-400">ACCESS</span>
-            <span className="text-white">GRANTED</span>
-          </h1>
+           <h1 className="text-4xl sm:text-5xl md:text-8xl font-bold text-white mb-6 font-mono">
+  <span className="text-green-400">ACCESS</span>
+  <span className="text-white">GRANTED</span>
+</h1>
           
-          <div className="h-16 flex items-center justify-center mb-8">
-            <div className="text-2xl md:text-3xl font-mono text-green-400">
-              <span className="inline-block">{'>'}</span>
-              <span className="ml-2">{currentText}</span>
-              <span className="inline-block w-1 h-8 bg-green-400 ml-1 animate-blink"></span>
-            </div>
-          </div>
+          <div className="h-12 sm:h-14 flex items-center justify-center mb-8">
+  <div className="text-xl sm:text-2xl md:text-3xl font-mono text-green-400">
+    <span className="inline-block">{'>'}</span>
+    <span className="ml-2">{currentText}</span>
+    <span className="inline-block w-1 h-6 sm:h-8 bg-green-400 ml-1 animate-blink"></span>
+  </div>
+</div>
           
-         <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-2xl mx-auto">
-  Welcome to my digital fortress. I'm Kenish Raghu, 
-  a <span className="text-green-400 font-semibold">Security Architect</span> and <span className="text-cyan-400 font-semibold">Full-Stack Developer</span> dedicated to building impenetrable defenses and robust software solutions in the ever-evolving cyber landscape.
+        <p className="text-base sm:text-lg text-gray-300 mb-8 leading-relaxed max-w-xl sm:max-w-2xl mx-auto">
+  Welcome to my digital fortress...
 </p>
         </div>
 

@@ -27,9 +27,9 @@ const AboutSection = () => {
   }, [counter]);
 
   return (
-    <section className="pt-32 pb-20 relative z-10">
+<section className="pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 md:pb-20 relative z-10">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16 text-green-400 font-mono">
+<h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-green-400 font-mono">
           <span className="relative inline-block">
             ABOUT ME
             <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-green-400/50"></span>
@@ -42,14 +42,14 @@ const AboutSection = () => {
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
               {/* Profile Image Section */}
               <div className="text-center">
                 <div className="relative inline-block group">
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-cyan-500 rounded-full opacity-50 blur-sm group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                   
                   <div className="relative">
-                    <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-gray-800 shadow-xl">
+<div className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-gray-800 shadow-xl">
                       <img 
                         src="/lovable-uploads/61e2dec6-a1bb-4ad9-8286-df80df90773d.png" 
                         alt="Kenish Raghu - Security Architect"
@@ -77,8 +77,8 @@ const AboutSection = () => {
                   </div>
                   
                   <div className="mt-6">
-                    <h3 className="text-2xl font-bold text-white mb-2 font-mono">KENISH RAGHU</h3>
-                    <p className="text-green-400 font-semibold text-lg h-6 font-mono">
+<h3 className="text-xl sm:text-2xl md:text-2xl font-bold text-white mb-2 font-mono">KENISH RAGHU</h3>
+<p className="text-base sm:text-lg text-gray-300 leading-relaxed relative pl-4 border-l-2 border-green-400/50 mb-4">
                       {typedText}
                       <span className="inline-block w-2 h-5 bg-green-400 ml-1 animate-blink"></span>
                     </p>
@@ -106,7 +106,7 @@ const AboutSection = () => {
                   <div className="group flex items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-green-400/50 transition-colors hover:bg-gray-800/70">
                     <div className="relative">
                       <span className="absolute -inset-1 bg-blue-500/20 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></span>
-                      <Eye className="relative w-6 h-6 text-blue-400 mr-3" />
+<Eye className="relative w-4 h-4 sm:w-6 sm:h-6 text-blue-400 mr-3" />
                     </div>
                     <div>
                       <h4 className="text-white font-semibold">Threat Detection</h4>
@@ -117,7 +117,7 @@ const AboutSection = () => {
                   <div className="group flex items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-green-400/50 transition-colors hover:bg-gray-800/70">
                     <div className="relative">
                       <span className="absolute -inset-1 bg-green-500/20 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></span>
-                      <Shield className="relative w-6 h-6 text-green-400 mr-3" />
+<Eye className="relative w-4 h-4 sm:w-6 sm:h-6 text-blue-400 mr-3" />
                     </div>
                     <div>
                       <h4 className="text-white font-semibold">Security Architecture</h4>
@@ -128,7 +128,7 @@ const AboutSection = () => {
                   <div className="group flex items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-green-400/50 transition-colors hover:bg-gray-800/70">
                     <div className="relative">
                       <span className="absolute -inset-1 bg-yellow-500/20 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></span>
-                      <Zap className="relative w-6 h-6 text-yellow-400 mr-3" />
+<Eye className="relative w-4 h-4 sm:w-6 sm:h-6 text-blue-400 mr-3" />
                     </div>
                     <div>
                       <h4 className="text-white font-semibold">Incident Response</h4>
@@ -137,7 +137,7 @@ const AboutSection = () => {
                   </div>
                 </div>
                 
-                <div className="mt-8 flex flex-wrap gap-4">
+<div className="mt-8 flex flex-wrap gap-4 justify-center sm:justify-start">
   <div className="relative group inline-block">
     <div className="absolute -inset-0.5 bg-gradient-to-r from-green-400 to-green-600 rounded-full opacity-60 blur transition duration-300 group-hover:opacity-100 group-hover:duration-200"></div>
     <a 

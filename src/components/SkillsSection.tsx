@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Shield, Code, Globe, Database, Lock, Eye, Zap, Server } from 'lucide-react';
 import { Progress } from "@/components/ui/progress";
@@ -38,6 +37,7 @@ const SkillsSection = () => {
     {
       icon: Shield,
       title: "Cybersecurity & Threat Defense",
+      shortTitle: "Security",
       skills: [
         "DDoS Mitigation", "Akamai WAF Policy Management", "Bot Manager Premier", 
         "Edge DNS Security", "API Security", "SIEM Integration", "SOC Operations",
@@ -48,6 +48,7 @@ const SkillsSection = () => {
     {
       icon: Eye,
       title: "Threat Intelligence & Analysis",
+      shortTitle: "Analysis",
       skills: [
         "Traffic Analysis & Log Review", "Packet Capture Analysis", "WireShark",
         "BurpSuite", "Penetration Testing", "Security Monitoring", "Incident Response",
@@ -58,6 +59,7 @@ const SkillsSection = () => {
     {
       icon: Lock,
       title: "Security Tools & Technologies",
+      shortTitle: "Tools",
       skills: [
         "Akamai Security Suite", "SIEM Platforms", "Security Orchestration",
         "Firewall Management", "IDS/IPS", "Endpoint Security", "Identity Management",
@@ -67,6 +69,7 @@ const SkillsSection = () => {
     {
       icon: Code,
       title: "Secure Development",
+      shortTitle: "Dev",
       skills: [
         "Java", "Python", "C/C++", "JavaScript", "Secure Coding Practices",
         "Application Security Testing", "OWASP Top 10", "Code Review",
@@ -76,64 +79,76 @@ const SkillsSection = () => {
   ];
 
   return (
-    <section className="py-20 relative z-10">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16 text-red-400 font-mono relative overflow-hidden">
-          <span className="relative z-10">SKILLS & EXPERTISE</span>
-          {/* <span className="absolute top-1/2 left-0 w-full h-0.5 bg-red-400/30"></span>
-          <span className="absolute top-1/2 left-0 w-1/2 h-0.5 bg-red-400 animate-pulse"></span> */}
-          
+    <section className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        {/* Main Title */}
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16 text-red-400 font-mono relative overflow-hidden">
+          <span className="relative z-10">
+            <span className="block sm:hidden">SKILLS</span>
+            <span className="hidden sm:block">SKILLS & EXPERTISE</span>
+          </span>
         </h2>
         
-        {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-10">
+        {/* Category Tabs - Responsive Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-8 sm:mb-10 md:mb-12 max-w-4xl mx-auto">
           {skillCategories.map((category, index) => (
             <button 
               key={index}
               onClick={() => setActiveCategory(index)}
               className={`
-                flex items-center px-5 py-3 rounded-lg transition-all duration-300
+                flex flex-col sm:flex-row items-center justify-center sm:justify-start 
+                px-2 sm:px-4 md:px-5 py-2 sm:py-3 rounded-lg transition-all duration-300
+                text-xs sm:text-sm md:text-base
                 ${activeCategory === index 
                   ? 'bg-red-400/20 border border-red-400/50 text-red-400' 
                   : 'bg-gray-800/50 border border-gray-700 text-gray-400 hover:border-red-400/30 hover:text-red-300'
                 }
               `}
             >
-              <category.icon className={`w-5 h-5 mr-2 ${activeCategory === index ? 'text-red-400' : 'text-gray-400'}`} />
-              <span className="font-medium hidden sm:inline">{category.title}</span>
-              <span className="font-medium sm:hidden">
-                {category.title.split(' ')[0]}
+              <category.icon className={`w-4 h-4 sm:w-5 sm:h-5 mb-1 sm:mb-0 sm:mr-2 ${
+                activeCategory === index ? 'text-red-400' : 'text-gray-400'
+              }`} />
+              <span className="font-medium text-center sm:text-left leading-tight">
+                <span className="hidden md:inline">{category.title}</span>
+                <span className="md:hidden">{category.shortTitle}</span>
               </span>
             </button>
           ))}
         </div>
         
         {/* Active Category Content */}
-        <div className={`bg-gray-900/50 backdrop-blur-sm border border-red-400/20 rounded-lg p-8 hover:border-red-400/40 transition-all duration-300 ${
+        <div className={`bg-gray-900/50 backdrop-blur-sm border border-red-400/20 rounded-lg p-4 sm:p-6 md:p-8 hover:border-red-400/40 transition-all duration-300 ${
           animate ? 'animate-fade-in' : 'opacity-0'
         }`}>
-          <div className="flex items-center mb-8">
-            <div className="bg-black/50 p-3 rounded-lg border border-red-400/30 mr-4">
-              {React.createElement(skillCategories[activeCategory].icon, { className: "w-10 h-10 text-red-400" })}
+          {/* Category Header */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6 sm:mb-8">
+            <div className="bg-black/50 p-2 sm:p-3 rounded-lg border border-red-400/30 mb-3 sm:mb-0 sm:mr-4">
+              {React.createElement(skillCategories[activeCategory].icon, { 
+                className: "w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-red-400" 
+              })}
             </div>
-            <h3 className="text-2xl font-bold text-white font-mono">
-              {skillCategories[activeCategory].title}
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white font-mono leading-tight">
+              <span className="hidden sm:block">{skillCategories[activeCategory].title}</span>
+              <span className="sm:hidden">{skillCategories[activeCategory].shortTitle}</span>
             </h3>
           </div>
           
-          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+          {/* Skills Grid - Enhanced Responsive */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
             {skillCategories[activeCategory].skills.map((skill, skillIndex) => (
               <div 
                 key={skillIndex} 
-                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-4 hover:border-red-400/30 transition-all duration-300"
+                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-3 sm:p-4 hover:border-red-400/30 transition-all duration-300 hover:transform hover:scale-[1.02]"
               >
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-white">{skill}</span>
-                  <span className="text-red-400 text-sm font-mono">{skillProgress[skill] || 0}%</span>
+                  <span className="text-white text-sm sm:text-base leading-tight pr-2">{skill}</span>
+                  <span className="text-red-400 text-xs sm:text-sm font-mono whitespace-nowrap">
+                    {skillProgress[skill] || 0}%
+                  </span>
                 </div>
                 <Progress 
                   value={skillProgress[skill] || 0}
-                  className="h-2 bg-gray-700" 
+                  className="h-1.5 sm:h-2 bg-gray-700" 
                   indicatorClassName="bg-gradient-to-r from-red-600 to-red-400" 
                 />
               </div>
@@ -141,27 +156,38 @@ const SkillsSection = () => {
           </div>
         </div>
         
-        <div className="mt-12 text-center">
-          <div className="bg-gray-900/50 backdrop-blur-sm border border-red-400/20 rounded-lg p-6 max-w-4xl mx-auto transform hover:scale-[1.01] transition-transform duration-300">
-            <h3 className="text-xl font-bold text-red-400 mb-4 font-mono">SECURITY CERTIFICATIONS & CONTINUOUS LEARNING</h3>
-            <p className="text-gray-300 leading-relaxed">
-              Continuously expanding expertise through hands-on experience, academic research, and staying current 
-              with emerging threats and security technologies. Committed to pursuing advanced security certifications 
-              to strengthen my cybersecurity knowledge and capabilities.
+        {/* Certifications Section - Enhanced Responsive */}
+        <div className="mt-8 sm:mt-12 text-center">
+          <div className="bg-gray-900/50 backdrop-blur-sm border border-red-400/20 rounded-lg p-4 sm:p-6 md:p-8 max-w-5xl mx-auto transform hover:scale-[1.01] transition-transform duration-300">
+            <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-red-400 mb-3 sm:mb-4 md:mb-6 font-mono leading-tight">
+              <span className="hidden sm:block">SECURITY CERTIFICATIONS & CONTINUOUS LEARNING</span>
+              <span className="sm:hidden">CERTIFICATIONS & LEARNING</span>
+            </h3>
+            <p className="text-gray-300 leading-relaxed text-sm sm:text-base md:text-lg mb-4 sm:mb-6">
+              <span className="hidden md:block">
+                Continuously expanding expertise through hands-on experience, academic research, and staying current 
+                with emerging threats and security technologies. Committed to pursuing advanced security certifications 
+                to strengthen my cybersecurity knowledge and capabilities.
+              </span>
+              <span className="md:hidden">
+                Expanding expertise through hands-on experience and pursuing advanced security certifications 
+                to strengthen cybersecurity knowledge and capabilities.
+              </span>
             </p>
             
-            <div className="mt-6 flex flex-wrap justify-center gap-4">
-              <div className="bg-gray-800/70 rounded-full px-4 py-2 border border-red-400/20 text-white text-sm flex items-center">
-                <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-                In Progress: CompTIA Security+
+            {/* Certification Badges - Responsive */}
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
+              <div className="bg-gray-800/70 rounded-full px-3 sm:px-4 py-2 border border-red-400/20 text-white text-xs sm:text-sm flex items-center justify-center sm:justify-start">
+                <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse flex-shrink-0"></div>
+                <span className="whitespace-nowrap">In Progress: CompTIA Security+</span>
               </div>
-              <div className="bg-gray-800/70 rounded-full px-4 py-2 border border-red-400/20 text-white text-sm flex items-center">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></div>
-                Planned: CEH
+              <div className="bg-gray-800/70 rounded-full px-3 sm:px-4 py-2 border border-red-400/20 text-white text-xs sm:text-sm flex items-center justify-center sm:justify-start">
+                <div className="w-2 h-2 bg-yellow-400 rounded-full mr-2 flex-shrink-0"></div>
+                <span className="whitespace-nowrap">Planned: CEH</span>
               </div>
-              <div className="bg-gray-800/70 rounded-full px-4 py-2 border border-red-400/20 text-white text-sm flex items-center">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></div>
-                Planned: CISSP
+              <div className="bg-gray-800/70 rounded-full px-3 sm:px-4 py-2 border border-red-400/20 text-white text-xs sm:text-sm flex items-center justify-center sm:justify-start">
+                <div className="w-2 h-2 bg-yellow-400 rounded-full mr-2 flex-shrink-0"></div>
+                <span className="whitespace-nowrap">Planned: CISSP</span>
               </div>
             </div>
           </div>
