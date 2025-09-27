@@ -38,11 +38,12 @@ const SkillsSection = () => {
       icon: Shield,
       title: "Cybersecurity & Threat Defense",
       shortTitle: "Security",
-      skills: [
-        "DDoS Mitigation", "Akamai WAF Policy Management", "Bot Manager Premier", 
+      skills: ["Snort", "Suricata",
+        "PCRE","YARA","ClamAV","Signature Development",
+        "IDS/IPS", "Intrusion Detection", "DDoS Mitigation", "Akamai WAF Policy Management", "Bot Manager Premier", 
         "Edge DNS Security", "API Security", "SIEM Integration", "SOC Operations",
         "Vulnerability Management", "Cloud Security Architecture", "Zero-Day Mitigation",
-        "ISO 27001 Compliance", "Network Security Assessments"
+        "ISO 27001 Compliance", "Network Security Assessments", 
       ]
     },
     {
@@ -50,6 +51,7 @@ const SkillsSection = () => {
       title: "Threat Intelligence & Analysis",
       shortTitle: "Analysis",
       skills: [
+        "PCAP Analysis","Python Automation" , "Threat Intelligence", "Cyber Threat Research",
         "Traffic Analysis & Log Review", "Packet Capture Analysis", "WireShark",
         "BurpSuite", "Penetration Testing", "Security Monitoring", "Incident Response",
         "Attack Pattern Analysis", "Threat Hunting", "OSINT", "Malware Analysis",

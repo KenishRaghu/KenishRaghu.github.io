@@ -12,6 +12,22 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
+  company: "Proofpoint",
+  role: "Threat Detection Engineer Intern",
+  location: "Boston(Remote), MA",
+  period: "Jul 2025 – Dec 2025",
+  icon: Shield,
+  achievements: [
+    "Developed and refined Snort and Suricata IDS signatures to detect malware, phishing, and exploit-based attacks,leveraging PCRE, protocol keywords, and contextual tuning to minimize false positives.",
+    "Performed in-depth dynamic malware analysis in a virtual lab to extract high-confidence IOCs and map adversary TTPs to the MITRE ATT&CK framework.",
+    "Validated and tuned detection rules by inspecting PCAP datasets using Wireshark and tcpdump, ensuring precise, actionable alerts aligned with threat context.",
+    "Contributed high-fidelity signatures to the ET OPEN and ET Pro rulesets, enhancing detection coverage across malware families and network behaviors.",
+    "Automated signature testing workflows using Python, accelerating rule deployment, regression testing, and detection logic updates at scale."
+  ]
+},
+
+
+    {
       company: "Akamai Technologies",
       role: "Security Architect",
       location: "Bengaluru, India",
@@ -119,7 +135,7 @@ const ExperienceSection = () => {
         <div className="mt-8 flex justify-center">
           <div className="inline-flex items-center space-x-2 py-1 px-3 rounded-full border border-green-400/30 text-green-400 text-sm">
             <Shield className="w-4 h-4" />
-            <span>Security roles from May - Dec 2025</span>
+            <span>Security roles from May 2026 onwards</span>
           </div>
         </div>
       </div>

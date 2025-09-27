@@ -83,7 +83,7 @@ const WelcomeSection = () => {
               <span className="absolute -inset-1 bg-green-500/20 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></span>
               <Terminal className="relative w-12 h-12 text-green-400 mx-auto mb-4" />
             </div>
-            <h3 className="text-2xl font-bold text-white mb-2 font-mono">2+</h3>
+            <h3 className="text-2xl font-bold text-white mb-2 font-mono">3</h3>
             <p className="text-gray-400">Years in Cybersecurity</p>
           </div>
           
@@ -92,7 +92,7 @@ const WelcomeSection = () => {
               <span className="absolute -inset-1 bg-cyan-500/20 rounded-full opacity-0 group-hover:opacity-100 blur transition-opacity duration-300"></span>
               <Lock className="relative w-12 h-12 text-cyan-400 mx-auto mb-4" />
             </div>
-            <h3 className="text-2xl font-bold text-white mb-2 font-mono">50+</h3>
+            <h3 className="text-2xl font-bold text-white mb-2 font-mono">500+</h3>
             <p className="text-gray-400">Security Implementations</p>
           </div>
           

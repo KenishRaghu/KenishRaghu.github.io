@@ -90,16 +90,10 @@ const AboutSection = () => {
               <div className="text-left">
                 <div className="mb-8 space-y-6">
                   <p className="text-gray-300 leading-relaxed text-lg relative pl-4 border-l-2 border-green-400/50">
-                    I'm a cybersecurity professional with over 2+ years of hands-on experience at Akamai Technologies, 
-                    specializing in cloud security architecture, threat mitigation, and advanced security implementations. 
-                    Currently pursuing my Master's in Computer Science at Northeastern University to deepen my expertise 
-                    in emerging security technologies.
-                  </p>
+I'm Kenish, a security professional with expertise in application and network security, specializing in detection engineering and threat response. At Akamai Technologies, I led the implementation of Web Application Firewalls, bot management, and SIEM integrations for global enterprises. My experience includes threat modeling, vulnerability assessments, and automating workflows to enhance detection, response, and operational efficiency. </p>
                   <p className="text-gray-300 leading-relaxed text-lg relative pl-4 border-l-2 border-green-400/50">
-                    My passion lies in building robust security frameworks that protect digital assets while enabling 
-                    seamless user experiences. I thrive on analyzing complex attack patterns, implementing zero-day 
-                    vulnerability mitigations, and developing innovative security solutions.
-                  </p>
+Currently, as a Threat Detection Engineer Intern at Proofpoint, I contribute to the Emerging Threats Pro IDS ruleset, focusing on writing and tuning Snort and Suricata signatures, developing YARA and ClamAV rules, and analyzing malicious traffic to improve detection precision. I collaborate with senior engineers to refine techniques, reduce false positives, and stay ahead of emerging threats, with a strong passion for building robust, adaptive security frameworks.                  </p>
+                  
                 </div>
                 
                 <div className="space-y-4">
@@ -141,7 +135,7 @@ const AboutSection = () => {
   <div className="relative group inline-block">
     <div className="absolute -inset-0.5 bg-gradient-to-r from-green-400 to-green-600 rounded-full opacity-60 blur transition duration-300 group-hover:opacity-100 group-hover:duration-200"></div>
     <a 
-      href="https://drive.google.com/file/d/1Tkora_IU8gBpmxTkeHq3cfd2t4ZdcRQ5/view?usp=sharing" 
+      href="https://drive.google.com/file/d/1v61dkY4v29y-eNzFL3NW0hLEDkxvnfL6/view?usp=sharing" 
       download="Kenish_Raghu_Resume.pdf"
       target="_blank"
       rel="noopener noreferrer"
@@ -154,7 +148,7 @@ const AboutSection = () => {
                   
                   <div className="inline-flex items-center space-x-2 bg-green-400/20 text-green-400 px-4 py-2 rounded-full text-sm font-semibold">
                     <Shield className="w-4 h-4" />
-                    <span>Available for Security Roles: May - Dec 2025</span>
+                    <span>Available for Security Roles: May 2026 onwards</span>
                   </div>
                 </div>
               </div>
